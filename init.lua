@@ -37,7 +37,7 @@ core.override_item("default:mese_crystal_fragment",{
 			return
 		end
 		local name = placer:get_player_name()
-		if core.is_protected(above) then
+		if core.is_protected(above, name) then
 			core.record_protection_violation(above, name)
 			return
 		end
